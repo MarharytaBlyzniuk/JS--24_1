@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script type="module">
+import {sum, doubledArray, dateCalculator, skillsManager} from "./main.js";
+
+/*1*/
+console.log('Сума елементів масиву:', sum)
+
+
+/*2*/
+console.log('Подвоєні елементи масиву:', doubledArray)
+
+/*3*/
+
+console.log(skillsManager.addSkill('JavaScript'))
+console.log(skillsManager.addSkill('CSS'))
+console.log(skillsManager.getAllSkills())
+
+
+/*4*/
+dateCalculator.addDays(5);
+console.log(dateCalculator.getResult()); // Виводить "2023-01-06"
+
+dateCalculator.subtractDays(3);
+console.log(dateCalculator.getResult()); // Виводить "2023-01-03"
+
+dateCalculator.addDays(5)
+console.log(dateCalculator.getResult()) // Виводить нову дату після додавання днів
+dateCalculator.subtractDays(3)
+console.log(dateCalculator.getResult()) // Виводить нову дату після віднімання днів
+</script>
+</body>
+</html>
